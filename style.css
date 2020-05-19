@@ -128,20 +128,43 @@ ul.topnav li.left {
   /* Section B About Me*/
 
 #section-b {
-    background: #efefef;
+    /* background: #efefef; */
     padding: 2em 4em;
+    background-image: url('./img/burton.png');
+    background-repeat: no-repeat;
+    /* opacity: 0.6; */
+    background-position: right;
+    background-size: contain;
   }
 
+.about {
+  grid-column-start: 1;
+}
+.about-text {
+  grid-column-start: 1;
+
+}
 
 .profile {
-  height: 190px;
-  width: 180px;
+  grid-column-start: 2;
+  place-self: center;
 }
-  
-  /* Section C */
+
+.profile img {
+  height: 350px;
+  width: 350px;
+}
+
+.questions {  
+  grid-column-start: 3;
+  text-align: end;
+  align-self: flex-end;
+}
+
+  /* Section C / About me part II */
+
   #section-c {
-    color: #545766;
-    padding: 2em;
+    padding: 2em 4em;
   }
   
   /* Section D / Gallery */
@@ -233,6 +256,12 @@ ul.topnav li.left {
       grid-column: span 2;
     }
     
+    .grid-b {
+      display: grid;
+      grid-template-columns: 33% auto auto;
+      grid-column-gap: 2em;
+    }
+
     .grid-img {
       display: grid;
       grid-template-columns: auto auto auto auto;
@@ -254,9 +283,7 @@ ul.topnav li.left {
     ul.topnav li.left, 
     ul.topnav li {float: none;}
 
-
-
-  .item2, .item5, .item6 {
+  .item2, .item5, .item6, .questions {
     text-align: left;
     padding-top: 1em;
   }
