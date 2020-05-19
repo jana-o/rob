@@ -5,29 +5,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Web Solution</title>
+    <title>Rob snowboard</title>
 </head>
 
 <body>
-    <!-- Header Showcase -->
-    <header id="showcase" class="grid">
-        <div class="bg-image"></div>
-        <div class="content-wrap">
-            <h1>Welcome to Snowboard</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit beatae magni laudantium in iure ab dolores
-                explicabo enim aut sunt.</p>
-            <a href="#section-b" class="btn">Read More</a>
-        </div>
+    <!-- nav bar -->
+    <header>
+        <nav>
+            <ul class="topnav">
+                <li class="left"><a href="/">Rob Snowboarding</a></li>
+                <li><a href="#section-a">Classes</a></li>
+                <li><a href="#section-b">About Me</a></li>
+                <li><a href="#section-c">Gallery</a></li>
+                <li><a href="#about">Contact</a></li>
+
+            </ul>
+        </nav>
     </header>
 
     <!-- Main area  -->
-
     <main class="main">
-        <!-- section a  -->
-        <section id="section-a" class="grid">
+
+        <!-- Home -->
+        <section id="home" class="grid">
+            <div class="box">
+                <div class="bg-image">
+                    <img src="./img/mountainwalk.jpeg" alt="snow">
+                </div>
+            </div>
+            <div class="box">
+                <p>Snowboard instructor</p>
+                <h2>Welcome to </h2>
+                <h1>Rob Snowboard</h1>
+                <a href="#section-d" class="btn">Get in touch</a>
+            </div>
+            <div class="pflaster">Life is a journey. ENJOY THE RIDE.</div>
+
             <div class="content-wrap">
-                <h2 class="content-title">Snowboard instructor</h2>
-                <!-- <div class="content-text"> -->
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis provident ducimus saepe hic
+                    amet debitis ab eius officiis beatae nemo.</p>
+            </div>
+        </section>
+
+        <!-- Section A  -->
+
+        <section id="section-a">
+            <div>
+                <h3>Classes.</h3>
+            </div>
+            <div class="grid">
+                <ul>
+                    <li>
+                        <div class="card">
+                            <img src="./img/multi.jpg" alt="snow">
+                            <div class="card-content">
+                                <h5>HYEJIN</h5>
+                                <h4 class="card-title">Snowboard</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nemo impedit
+                                    officiis
+                                    ullam doloribus velit reprehenderit ut sed sint facilis.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <img src="./img/snowb1.jpeg" alt="snow">
+                            <div class="card-content">
+                                <h5>HYEJIN</h5>
+                                <h4 class="card-title">Ski</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nemo impedit
+                                    officiis
+                                    ullam doloribus velit reprehenderit ut sed sint facilis.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <img src="./img/multi.jpg" alt="snow">
+                            <div class="card-content">
+                                <h5>HYEJIN</h5>
+                                <h4 class="card-title">Levels</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nemo impedit
+                                    officiis
+                                    ullam doloribus velit reprehenderit ut sed sint facilis.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section B  -->
+
+        <section id="section-b" class="grid">
+            <div>About me.</div>
+            <div class="about-text">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum soluta at excepturi
                     praesentium
                     ratione dicta doloribus porro amet illum nam tempora, dolor quaerat, explicabo quis commodi
@@ -36,79 +108,80 @@
                     minima?
                 </p>
             </div>
-            <!-- </div> -->
-        </section>
-
-        <!-- Section B  -->
-        <section id="section-b" class="grid">
-            <ul>
-                <li>
-                    <div class="card">
-                        <img src="./img/multi.jpg" alt="snow">
-                        <div class="card-content">
-                            <h3 class="card-title">Snow</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nemo impedit officiis
-                                ullam doloribus velit reprehenderit ut sed sint facilis.</p>
-
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="card">
-                        <img src="./img/snowb1.jpeg" alt="snow">
-                        <div class="card-content">
-                            <h3 class="card-title">Train</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nemo impedit officiis
-                                ullam doloribus velit reprehenderit ut sed sint facilis.</p>
-
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="card">
-                        <img src="./img/multi.jpg" alt="snow">
-                        <div class="card-content">
-                            <h3 class="card-title">Development</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nemo impedit officiis
-                                ullam doloribus velit reprehenderit ut sed sint facilis.</p>
-
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </section>
-
-        <!-- section C  -->
-        <section id="section-c" class="grid">
-            <div class="content-wrap">
-                <h2 class="content-title">Hello</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis provident ducimus saepe hic
-                    amet debitis ab eius officiis beatae nemo.</p>
+            <div class="box about">
+                <img src="./img/multi.jpg" alt="snow" class="profile">
+                <img src="./img/burton.png" alt="snow" class="profile">
+                <div>
+                    <p>Got a question? Get in touch</p>
+                    <p>Get in touch</p>
+                </div>
             </div>
         </section>
 
-
-        <!-- section D  -->
-        <section id="section-d" class="grid">
+        <!-- Section C  -->
+        <!-- <section id="section-c" class="grid">
             <div class="box">
-                <h2 class="content-title">Get it touch</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis provident ducimus saepe hic
-                    amet debitis ab eius officiis beatae nemo.</p>
-                <p>contact@hellomail.com</p>
+                <img src="./img/burton.png" alt="snow" class="profile">
             </div>
             <div class="box">
-                <h2 class="content-title">About us</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi natus accusamus voluptate libero
-                    soluta
-                    voluptates fuga maxime magnam nulla! Quas porro, sit aliquam sunt iure debitis est dolor
-                    exercitationem
-                    accusantium?</p>
+                <img src="./img/burton.png" alt="snow" class="profile">
+            </div>
+            <div class="box">
+                <p>Amet consectetur adipisicing elit. Perferendis provident ducimus saepe hic
+                    amet debitis ab eius officiis beatae nemo.</p>
+            </div>
+        </section> -->
+
+
+        <!-- Section D  -->
+        <section id="section-d">
+            <div>
+                <h3>Gallery.</h3>
+            </div>
+            <div class="grid-img">
+                <div> <img src="./img/method-in-pipe.jpg" alt="snow" class="gallery-img"></div>
+                <div> <img src="./img/front-3-tail.jpg" alt="snow" class="gallery-img"></div>
+                <div> <img src="./img/method-in-pipe.jpg" alt="snow" class="gallery-img"></div>
+                <div> <img src="./img/front-3-tail.jpg" alt="snow" class="gallery-img"></div>
+                <div> <img src="./img/method-in-pipe.jpg" alt="snow" class="gallery-img"></div>
+                <div> <img src="./img/front-3-tail.jpg" alt="snow" class="gallery-img"></div>
+                <div> <img src="./img/method-in-pipe.jpg" alt="snow" class="gallery-img"></div>
+                <div> <img src="./img/front-3-tail.jpg" alt="snow" class="gallery-img"></div>
             </div>
         </section>
     </main>
-    <footer class="grid" id="main-footer">
-        <div>Snowboard company</div>
-        <!-- <div>Project by <a href="http://jana.berlin" target="_blank"></a></div> -->
+    <footer id="main-footer">
+        <div>
+            <h3>Contact Me.</h3>
+        </div>
+        <div>
+            <h5>HYEJIN</h5>
+            <h4>Lorem ipsum dolor sil amet</h4>
+            <p>email@email.com</p>
+            <p>email@email.com</p>
+            <p>email@email.com</p>
+            <p>email@email.com</p>
+        </div>
+        <div>
+            <p>Life is a journey - <span class="upper">enjoy the ride.</span> </p>
+        </div>
+
+        <div>
+            <ul class="smallnav">
+                <li><a href="/">Home</a></li>
+                <li><a href="#section-a">Classes</a></li>
+                <li><a href="#section-b">About Me</a></li>
+                <li><a href="#section-c">Gallery</a></li>
+                <li><a href="#about">Contact</a></li>
+
+            </ul>
+        </div>
+
+        <div>
+            <p>Got a question?</p>
+            <p>Get in touch</p>
+        </div>
+        <div>Copyright <a href="http://jana.berlin" target="_blank">Jana.Berlin</a>c 2020.</div>
     </footer>
 </body>
 
