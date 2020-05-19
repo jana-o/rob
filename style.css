@@ -104,10 +104,10 @@ ul.topnav li.left {
 }
 
 
-/* Section A */
+/* Section A  Classes */
 
 #section-a {
-  padding: 2em 1em 1em;
+  padding: 2em 4em;
 }
 
 #section-a ul {
@@ -125,11 +125,11 @@ ul.topnav li.left {
 }
 
 
-  /* Section B */
+  /* Section B About Me*/
 
 #section-b {
     background: #efefef;
-    padding: 2.5em;
+    padding: 2em 4em;
   }
 
 
@@ -154,7 +154,7 @@ ul.topnav li.left {
   /* Footer */
   
   #main-footer {
-    padding: 2em 4em;
+    padding: 2em 4em 6em 4em;
   }
 
   .upper {
@@ -173,6 +173,31 @@ ul.topnav li.left {
     margin: 0;
     overflow: hidden;
   }
+
+.item2 {
+  grid-column-start: 3;
+  text-align: end;
+}
+.item3 {
+  align-self: flex-end;
+}
+
+.item5 {
+  text-align: end;
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+.get-in-touch {
+  font-size: small;
+}
+.item6, .item6 a {
+  color: rgb(170, 170, 170);
+  font-size: x-small;
+  text-align: end;
+  grid-column-start: 3;
+  grid-row-start: 2;
+  align-self: flex-end;
+}
   
   /* Media Queries */
   @media (min-width: 700px) {
@@ -204,8 +229,7 @@ ul.topnav li.left {
       grid-column: 2/4;
     }
   
-    .box,
-    #main-footer div {
+    .box {
       grid-column: span 2;
     }
     
@@ -215,11 +239,30 @@ ul.topnav li.left {
       grid-row-gap: .3em;
       gap: .3em;
     }
- 
+    
+    .grid-footer {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto auto;
+      grid-row-gap: 4em;
+
+    }
   }
   
 
   @media screen and (max-width: 600px) {
     ul.topnav li.left, 
     ul.topnav li {float: none;}
+
+
+
+  .item2, .item5, .item6 {
+    text-align: left;
+    padding-top: 1em;
+  }
+
+  .item4 ul.smallnav {
+    padding: 0;
+    margin-top: 1em;
+  }
   }
