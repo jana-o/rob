@@ -124,7 +124,7 @@ ul.topnav li.left {
 /* Section A  Classes */
 
 #section-a {
-  padding: 3em 4em;
+  padding: 4em;
 }
 
 #section-a ul {
@@ -145,11 +145,9 @@ ul.topnav li.left {
   /* Section B About Me*/
 
 #section-b {
-    /* background: #efefef; */
     padding: 2em 4em;
     background-image: url('./img/Front-3-tail-bw.png');
     background-repeat: no-repeat;
-    /* opacity: 0.6; */
     background-position: right;
     background-size: contain;
   }
@@ -167,10 +165,6 @@ ul.topnav li.left {
   place-self: center;
 }
 
-.profile img {
-  width: 250px;
-}
-
 .questions {  
   grid-column-start: 3;
   text-align: end;
@@ -180,12 +174,8 @@ ul.topnav li.left {
   /* Section C / About me part II */
 
   #section-c {
-    padding: 4em 4em 2em;
+    padding: 4em;
   }
-  .austria {
-    width: 250px;
-  }
-
 
   /* Section D / Gallery */
 
@@ -270,7 +260,10 @@ ul.topnav li.left {
     #section-b p {
       padding-top: 0;
     }
-  
+    .profile img {
+      width: 250px;
+    }
+    
     .content-wrap,
     #section-a ul {
       grid-column: 2/5;
@@ -319,6 +312,11 @@ ul.topnav li.left {
       text-align: left;
   }
 
+  #section-b {
+    padding: 2em 4em;
+    background-image: none; 
+  }
+
   .item2, .item5, .item6, .questions {
     text-align: left;
     padding-top: 1em;
@@ -329,7 +327,7 @@ ul.topnav li.left {
     margin-top: 1em;
   }
   .c-img {
-    padding: 1em;
+    padding-bottom: 1em;
     }
 
   }
