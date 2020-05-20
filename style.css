@@ -90,10 +90,27 @@ ul.topnav li.left {
 #home .content-wrap {
   text-align: center;
   padding: 2em;
+  margin: 0em 8em;
 }
 
 #home img {
   opacity: .4;;
+}
+.box-img {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  z-index: -1;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.box-welcome {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  background-color: #fff;
+  padding: 2em;
+  align-self: center;
 }
 
 .pflaster {
@@ -107,7 +124,7 @@ ul.topnav li.left {
 /* Section A  Classes */
 
 #section-a {
-  padding: 2em 4em;
+  padding: 3em 4em;
 }
 
 #section-a ul {
@@ -130,7 +147,7 @@ ul.topnav li.left {
 #section-b {
     /* background: #efefef; */
     padding: 2em 4em;
-    background-image: url('./img/burton.png');
+    background-image: url('./img/Front-3-tail-bw.png');
     background-repeat: no-repeat;
     /* opacity: 0.6; */
     background-position: right;
@@ -151,8 +168,7 @@ ul.topnav li.left {
 }
 
 .profile img {
-  height: 350px;
-  width: 350px;
+  width: 250px;
 }
 
 .questions {  
@@ -181,7 +197,7 @@ ul.topnav li.left {
   /* Footer */
   
   #main-footer {
-    padding: 2em 4em 6em 4em;
+    padding: 2em 4em 4em;
   }
 
   .upper {
@@ -232,7 +248,11 @@ ul.topnav li.left {
       display: grid;
       grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
     }
-
+    .grid-main {
+      display: grid;
+      grid-template-columns: 2em 50% 150px auto 2em;
+      grid-template-rows: 10% auto 10% 20%;
+    }
     #section-a ul {
       display: flex;
       justify-content: space-around;
@@ -253,7 +273,7 @@ ul.topnav li.left {
   
     .content-wrap,
     #section-a ul {
-      grid-column: 2/4;
+      grid-column: 2/5;
     }
   
     .box {
@@ -292,6 +312,12 @@ ul.topnav li.left {
   @media screen and (max-width: 600px) {
     ul.topnav li.left, 
     ul.topnav li {float: none;}
+  
+    #home .content-wrap {
+      padding: 1em;
+      margin: 1em;
+      text-align: left;
+  }
 
   .item2, .item5, .item6, .questions {
     text-align: left;
