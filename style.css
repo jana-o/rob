@@ -12,20 +12,17 @@ body {
   }
   
   h1,
-  h2 {
+  h2,
+  h5 {
     margin: 0;
   }
   h3 {
     text-transform: uppercase;
     margin-bottom: 2em;  
-
   }
   h4 {
     margin: 0;
     padding: .5em 0;
-  }
-  h5 {
-    margin: 0;
   }
   
   p {
@@ -125,6 +122,7 @@ ul.topnav li.left {
 
 #section-a {
   padding: 4em;
+  margin-bottom: 2em;
 }
 
 #section-a ul {
@@ -146,6 +144,7 @@ ul.topnav li.left {
 
 #section-b {
     padding: 2em 4em;
+    margin-bottom: 2em;
     background-image: url('./img/Front-3-tail-bw.png');
     background-repeat: no-repeat;
     background-position: right;
@@ -175,12 +174,15 @@ ul.topnav li.left {
 
   #section-c {
     padding: 4em;
+    margin-bottom: 2em;
   }
 
   /* Section D / Gallery */
 
   #section-d {
     padding: 2em 4em;
+    margin-bottom: 2em;
+
   }
 
   
@@ -290,7 +292,7 @@ ul.topnav li.left {
       display: grid;
       grid-template-columns: auto auto auto;
       grid-template-rows: auto auto;
-      grid-row-gap: 4em;
+      grid-row-gap: 6em;
 
     }
 
